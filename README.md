@@ -1,7 +1,7 @@
 # CoinGrabber
-A really basic game made in python just to prove to me that i could
-made with no outside libraries
-the goal is to get 20 coins as quick as possible. try to beat your high-score and challenge your friends
+A really basic game made in python just to prove to me that i could.
+Made with no outside libraries.
+The goal is to get 20 coins as quick as possible. try to beat your high-score and challenge your friends
 
 # Setup
 
