@@ -12,6 +12,7 @@ screen[char] = 8
 screen[coin] = 0
 keypress = ''
 points = 0
+firstprint = False
 print("Coin Grabber 2D by Daniel.S \n")
 if input("do you want to know how to play the game? (y/n): ").lower() == "y":
     print("""you are the eight (8), your goal is to collect the coins that are zeroes (0) in the fastest time possible.
@@ -40,10 +41,11 @@ starttime = time.time()
 for y in range(9):
     for x in range(9):
         screen[x] = bg[x]
-        if coinheight == y:
-            screen[coin] = 0
-        if charheight == y:
-            screen[char] = 8
+    if coinheight == y:
+        screen[coin] = 0
+    if charheight == y:
+        screen[char] = 8
+    print(screen)
 while True: 
     keypress = input().lower()
     if keypress == 'd' and char != 8:
@@ -74,7 +76,7 @@ while True:
         print("your time was: ",endtime-starttime)
         if endtime - starttime < float(high):
             highfile.close
-            highfile = open(r"C:\ProgramData\coingrabberhigh.txt", "w+")
+            highfile = open(r"C:\ProgramData\coingrabber2Dhigh.txt", "w+")
             highfile.write(str(endtime - starttime))
             highfile.close()
             print("High Score: ",endtime-starttime)
