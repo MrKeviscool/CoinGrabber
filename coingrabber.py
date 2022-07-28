@@ -35,6 +35,8 @@ print("1")
 time.sleep(1)
 print("GOOO!")
 starttime = time.time()
+for a in range(7):
+    print("\n\n\n")
 print(screen)
 while True: 
     keypress = input().lower()
